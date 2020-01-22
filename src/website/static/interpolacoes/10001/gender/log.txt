@@ -1,0 +1,9 @@
+[2019-11-12 04:23:21,386][INFO] Initializing generator.
+[2019-11-12 04:23:21,589][INFO] Loading pytorch model from `models/pretrain/stylegan_ffhq.pth`.
+[2019-11-12 04:23:21,857][INFO] Successfully loaded!
+[2019-11-12 04:23:25,389][INFO] Preparing boundary.
+[2019-11-12 04:23:25,395][INFO] Preparing latent codes.
+[2019-11-12 04:23:25,395][INFO]   Load latent codes from `/content/output_vectors.npy`.
+[2019-11-12 04:23:25,396][INFO] Editing 1 samples.
+[2019-11-12 04:23:28,983][DEBUG]   Finished sample   0.
+[2019-11-12 04:23:28,984][INFO] Successfully edited 1 samples.

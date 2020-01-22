@@ -1,0 +1,154 @@
+[2019-11-12 04:12:44,127][INFO] Initializing generator.
+[2019-11-12 04:12:45,845][INFO] Loading tensorflow model from `models/pretrain/karras2019stylegan-ffhq-1024x1024.pkl`.
+[2019-11-12 04:13:28,348][INFO] Successfully loaded!
+[2019-11-12 04:13:28,349][INFO] Converting tensorflow model to pytorch version.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `dlatent_avg` to `truncation.w_avg`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise0` to `synthesis.layer0.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise1` to `synthesis.layer1.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise2` to `synthesis.layer2.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise3` to `synthesis.layer3.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise4` to `synthesis.layer4.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise5` to `synthesis.layer5.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise6` to `synthesis.layer6.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise7` to `synthesis.layer7.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise8` to `synthesis.layer8.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise9` to `synthesis.layer9.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise10` to `synthesis.layer10.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise11` to `synthesis.layer11.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise12` to `synthesis.layer12.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,592][DEBUG]   Converting `noise13` to `synthesis.layer13.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `noise14` to `synthesis.layer14.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `noise15` to `synthesis.layer15.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `noise16` to `synthesis.layer16.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `noise17` to `synthesis.layer17.epilogue.apply_noise.noise`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense0/weight` to `mapping.dense0.linear.weight`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense0/bias` to `mapping.dense0.wscale.bias`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense1/weight` to `mapping.dense1.linear.weight`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense1/bias` to `mapping.dense1.wscale.bias`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense2/weight` to `mapping.dense2.linear.weight`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense2/bias` to `mapping.dense2.wscale.bias`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense3/weight` to `mapping.dense3.linear.weight`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense3/bias` to `mapping.dense3.wscale.bias`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense4/weight` to `mapping.dense4.linear.weight`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense4/bias` to `mapping.dense4.wscale.bias`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense5/weight` to `mapping.dense5.linear.weight`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense5/bias` to `mapping.dense5.wscale.bias`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense6/weight` to `mapping.dense6.linear.weight`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense6/bias` to `mapping.dense6.wscale.bias`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense7/weight` to `mapping.dense7.linear.weight`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `Dense7/bias` to `mapping.dense7.wscale.bias`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `4x4/Const/const` to `synthesis.layer0.first_layer`.
+[2019-11-12 04:13:28,593][DEBUG]   Converting `4x4/Const/Noise/weight` to `synthesis.layer0.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `4x4/Const/bias` to `synthesis.layer0.epilogue.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `4x4/Const/StyleMod/weight` to `synthesis.layer0.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `4x4/Const/StyleMod/bias` to `synthesis.layer0.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `4x4/Conv/weight` to `synthesis.layer1.conv.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `4x4/Conv/Noise/weight` to `synthesis.layer1.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `4x4/Conv/bias` to `synthesis.layer1.epilogue.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `4x4/Conv/StyleMod/weight` to `synthesis.layer1.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `4x4/Conv/StyleMod/bias` to `synthesis.layer1.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `8x8/Conv0_up/weight` to `synthesis.layer2.conv.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `8x8/Conv0_up/Noise/weight` to `synthesis.layer2.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `8x8/Conv0_up/bias` to `synthesis.layer2.epilogue.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `8x8/Conv0_up/StyleMod/weight` to `synthesis.layer2.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `8x8/Conv0_up/StyleMod/bias` to `synthesis.layer2.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `8x8/Conv1/weight` to `synthesis.layer3.conv.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `8x8/Conv1/Noise/weight` to `synthesis.layer3.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `8x8/Conv1/bias` to `synthesis.layer3.epilogue.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `8x8/Conv1/StyleMod/weight` to `synthesis.layer3.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `8x8/Conv1/StyleMod/bias` to `synthesis.layer3.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `16x16/Conv0_up/weight` to `synthesis.layer4.conv.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `16x16/Conv0_up/Noise/weight` to `synthesis.layer4.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `16x16/Conv0_up/bias` to `synthesis.layer4.epilogue.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `16x16/Conv0_up/StyleMod/weight` to `synthesis.layer4.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `16x16/Conv0_up/StyleMod/bias` to `synthesis.layer4.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `16x16/Conv1/weight` to `synthesis.layer5.conv.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `16x16/Conv1/Noise/weight` to `synthesis.layer5.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `16x16/Conv1/bias` to `synthesis.layer5.epilogue.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `16x16/Conv1/StyleMod/weight` to `synthesis.layer5.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `16x16/Conv1/StyleMod/bias` to `synthesis.layer5.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `32x32/Conv0_up/weight` to `synthesis.layer6.conv.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `32x32/Conv0_up/Noise/weight` to `synthesis.layer6.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `32x32/Conv0_up/bias` to `synthesis.layer6.epilogue.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `32x32/Conv0_up/StyleMod/weight` to `synthesis.layer6.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `32x32/Conv0_up/StyleMod/bias` to `synthesis.layer6.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `32x32/Conv1/weight` to `synthesis.layer7.conv.weight`.
+[2019-11-12 04:13:28,594][DEBUG]   Converting `32x32/Conv1/Noise/weight` to `synthesis.layer7.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `32x32/Conv1/bias` to `synthesis.layer7.epilogue.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `32x32/Conv1/StyleMod/weight` to `synthesis.layer7.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `32x32/Conv1/StyleMod/bias` to `synthesis.layer7.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `64x64/Conv0_up/weight` to `synthesis.layer8.conv.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `64x64/Conv0_up/Noise/weight` to `synthesis.layer8.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `64x64/Conv0_up/bias` to `synthesis.layer8.epilogue.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `64x64/Conv0_up/StyleMod/weight` to `synthesis.layer8.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `64x64/Conv0_up/StyleMod/bias` to `synthesis.layer8.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `64x64/Conv1/weight` to `synthesis.layer9.conv.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `64x64/Conv1/Noise/weight` to `synthesis.layer9.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `64x64/Conv1/bias` to `synthesis.layer9.epilogue.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `64x64/Conv1/StyleMod/weight` to `synthesis.layer9.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `64x64/Conv1/StyleMod/bias` to `synthesis.layer9.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `128x128/Conv0_up/weight` to `synthesis.layer10.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `128x128/Conv0_up/Noise/weight` to `synthesis.layer10.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `128x128/Conv0_up/bias` to `synthesis.layer10.epilogue.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `128x128/Conv0_up/StyleMod/weight` to `synthesis.layer10.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `128x128/Conv0_up/StyleMod/bias` to `synthesis.layer10.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `128x128/Conv1/weight` to `synthesis.layer11.conv.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `128x128/Conv1/Noise/weight` to `synthesis.layer11.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `128x128/Conv1/bias` to `synthesis.layer11.epilogue.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `128x128/Conv1/StyleMod/weight` to `synthesis.layer11.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `128x128/Conv1/StyleMod/bias` to `synthesis.layer11.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `256x256/Conv0_up/weight` to `synthesis.layer12.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `256x256/Conv0_up/Noise/weight` to `synthesis.layer12.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `256x256/Conv0_up/bias` to `synthesis.layer12.epilogue.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `256x256/Conv0_up/StyleMod/weight` to `synthesis.layer12.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `256x256/Conv0_up/StyleMod/bias` to `synthesis.layer12.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `256x256/Conv1/weight` to `synthesis.layer13.conv.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `256x256/Conv1/Noise/weight` to `synthesis.layer13.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `256x256/Conv1/bias` to `synthesis.layer13.epilogue.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `256x256/Conv1/StyleMod/weight` to `synthesis.layer13.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `256x256/Conv1/StyleMod/bias` to `synthesis.layer13.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `512x512/Conv0_up/weight` to `synthesis.layer14.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `512x512/Conv0_up/Noise/weight` to `synthesis.layer14.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,595][DEBUG]   Converting `512x512/Conv0_up/bias` to `synthesis.layer14.epilogue.bias`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `512x512/Conv0_up/StyleMod/weight` to `synthesis.layer14.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `512x512/Conv0_up/StyleMod/bias` to `synthesis.layer14.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `512x512/Conv1/weight` to `synthesis.layer15.conv.weight`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `512x512/Conv1/Noise/weight` to `synthesis.layer15.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `512x512/Conv1/bias` to `synthesis.layer15.epilogue.bias`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `512x512/Conv1/StyleMod/weight` to `synthesis.layer15.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `512x512/Conv1/StyleMod/bias` to `synthesis.layer15.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `1024x1024/Conv0_up/weight` to `synthesis.layer16.weight`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `1024x1024/Conv0_up/Noise/weight` to `synthesis.layer16.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `1024x1024/Conv0_up/bias` to `synthesis.layer16.epilogue.bias`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `1024x1024/Conv0_up/StyleMod/weight` to `synthesis.layer16.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `1024x1024/Conv0_up/StyleMod/bias` to `synthesis.layer16.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `1024x1024/Conv1/weight` to `synthesis.layer17.conv.weight`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `1024x1024/Conv1/Noise/weight` to `synthesis.layer17.epilogue.apply_noise.weight`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `1024x1024/Conv1/bias` to `synthesis.layer17.epilogue.bias`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `1024x1024/Conv1/StyleMod/weight` to `synthesis.layer17.epilogue.style_mod.dense.linear.weight`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `1024x1024/Conv1/StyleMod/bias` to `synthesis.layer17.epilogue.style_mod.dense.wscale.bias`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `ToRGB_lod0/weight` to `synthesis.output.conv.weight`.
+[2019-11-12 04:13:28,596][DEBUG]   Converting `ToRGB_lod0/bias` to `synthesis.output.bias`.
+[2019-11-12 04:13:28,596][INFO] Successfully converted!
+[2019-11-12 04:13:28,596][INFO] Saving pytorch model to `models/pretrain/stylegan_ffhq.pth`.
+[2019-11-12 04:13:28,684][INFO] Successfully saved!
+[2019-11-12 04:13:28,684][INFO] Loading pytorch model from `models/pretrain/stylegan_ffhq.pth`.
+[2019-11-12 04:13:28,980][INFO] Successfully loaded!
+[2019-11-12 04:13:28,983][INFO] Testing conversion results.
+[2019-11-12 04:13:39,243][DEBUG]   Test 000: distance 7.755629e-07.
+[2019-11-12 04:13:39,359][DEBUG]   Test 001: distance 1.654238e-06.
+[2019-11-12 04:13:39,474][DEBUG]   Test 002: distance 1.012943e-06.
+[2019-11-12 04:13:39,591][DEBUG]   Test 003: distance 8.369572e-07.
+[2019-11-12 04:13:39,708][DEBUG]   Test 004: distance 7.390718e-07.
+[2019-11-12 04:13:39,823][DEBUG]   Test 005: distance 9.138416e-07.
+[2019-11-12 04:13:39,937][DEBUG]   Test 006: distance 8.521274e-07.
+[2019-11-12 04:13:40,053][DEBUG]   Test 007: distance 1.414828e-06.
+[2019-11-12 04:13:40,168][DEBUG]   Test 008: distance 6.194679e-07.
+[2019-11-12 04:13:40,282][DEBUG]   Test 009: distance 7.304523e-07.
+[2019-11-12 04:13:40,282][INFO] Average distance is 9.549490e-07.
+[2019-11-12 04:13:40,285][INFO] Preparing boundary.
+[2019-11-12 04:13:40,286][INFO] Preparing latent codes.
+[2019-11-12 04:13:40,286][INFO]   Load latent codes from `/content/output_vectors.npy`.
+[2019-11-12 04:13:40,287][INFO] Editing 1 samples.
+[2019-11-12 04:13:43,937][DEBUG]   Finished sample   0.
+[2019-11-12 04:13:43,938][INFO] Successfully edited 1 samples.
