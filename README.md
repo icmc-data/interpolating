@@ -27,4 +27,20 @@ Com essa finalidade, foi desenvolvido um website que permitiu aos participantes 
     │   │   ├── static              <- recursos utilizados pelo website como CSS, Javascripts e imagens
     │   │   │   ├── interpolacoes   <- diretório utilizado para salvar os resultados das imagens processadas pela GAN.
 
- 
+##  Requisitos e dependências
+
+A versão do python e também de todas as dependências utilizadas no projeto podem ser encontradas no arquivo *environment.yml*. 
+Para a execução da GAN localmente é necessário a utilização do CUDA e do TensorFlow nas versões especificadas no notebook *gerar_instancia.ipynb*.
+
+## Rodando o projeto
+
+O projeto desenvolvido é dividido em duas frentes distintas para que possa funcionar. Sendo elas:
+
+ - **Front-side:** Responsável pela execução do website; captação de imagens para serem processadas; funções iterativas para o usuário final.
+ - **Server-side:** Responsável pela execução dos scripts de processamento. Deve possuir uma GPU que comporte a execução da StyleGAN.
+
+ O Website foi desenvolvido em  django e basta, portanto, baixar os arquivos da pasta */src* em um diretório local e executar o seguinte comando via terminal:
+
+    $ python manage.py runserver 0.0.0.0:8000
+
+Já quanto ao servidor, recomendamos que se siga as instruções passo a passo do notebook em uma instância do Google Collab. Uma vez compreendido quais arquivos são utilizados no mesmo é possível reproduzir a arquitetura utilizada em qualquer serviço de nuvem (ou localmente) que possua os pré-requisitos necessários.
