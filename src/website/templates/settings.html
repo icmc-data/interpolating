@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+            <h1 class="mt-5"><strong>Configurações</strong></h1>
+        </div>
+
+        <div class="col-12 col-md-5">
+            <div class="mt-3 card card-body">
+                <h4 class="border-bottom mb-4"><strong>Informações</strong></h4>
+                <p class="mb-0"><b>Aguardando na fila:</b> &nbsp;&nbsp; {{dados.nao_processados}} </p>
+                <p class="mb-0"><b>Imagens processadas:</b> {{dados.processados}}</p>
+                <p class="mb-0"><b>Imagens finalizadas:</b> &nbsp;&nbsp;{{dados.finalizados}}</p>
+                {% ifequal dados.status "finalizado" %}
+                    <p class="mb-0"><b>Status do processamento: <span class="text-success">Finalizado</span> </b></p>
+                {% endifequal %}
+                
+                {% ifequal dados.status "processando" %}
+                    <p class="mb-0"><b>Status do processamento: <span class="text-warning">Processando...</span> </b></p>
+                {% endifequal %}
+
+                {% ifequal dados.status "error" %}
+                    <p class="mb-0"><b>Status do processamento: <span class="text-danger">Falha ao verificar</span> </b></p>
+                {% endifequal %}
+            </div>
+        </div>
+
+        <div class="col-12 col-md-5">
+            <form class="mt-3 card card-body" method="POST">
+                    {% csrf_token %}
+                <h4 class="border-bottom mb-4"><strong>Pós-processamento</strong></h4>
+                <p><input type="text" id="auth_token" name="auth_token" class="form-control" placeholder="Token de Segurança" maxlength="100" required></p>    
+                <button type="submit" name="btn_mover" value="submit" class="btn btn-dark mb-0"><i class="fa fa-fw fa-send" aria-hidden="true"></i> Mover finalizadas </button>
+            </form>
+        </div>
+
+        <div class="col-12 col-md-5">
+            <form class="mt-3 card card-body" method="POST">
+                {% csrf_token %}
+                <h4 class="border-bottom mb-4"><strong>Processar fila de fotos</strong></h4>
+                <p><input type="text" id="auth_token" name="auth_token" class="form-control" placeholder="Token de Segurança" maxlength="100" required></p>    
+                <button type="submit" name="btn_processar" value="submit" class="btn btn-primary mb-0"><i class="fa fa-fw fa-send" aria-hidden="true"></i> Processar Imagens</button>
+            </form>
+        </div>
+
+        <div class="col-12 col-md-5">
+            <form class="mt-3 card card-body" method="POST">
+                {% csrf_token %}
+                <h4 class="border-bottom mb-4"><strong>Processar foto específica</strong></h4>
+                <p><input type="text" id="imagem_id" name="imagem_id" class="form-control" placeholder="Código da Imagem" maxlength="100" required></p>
+                <p><input type="text" id="auth_token" name="auth_token" class="form-control" placeholder="Token de Segurança" maxlength="100" required></p>  
+                <button type="submit" name="btn_processar_id" value="submit" class="btn btn-primary mb-0"><i class="fa fa-fw fa-send" aria-hidden="true"></i> Processar Imagem</button>
+            </form>
+        </div>
+
+        
+    </div>
+    
+    
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="row justify-content-center align-items-center">
+        <div class="mt-5 col-12 col-md-8">
+            
+            {% if form_result == 'success' %}
+            <div class="p-3 mb-4 bg-success text-white shadow-sm">
+                Imagem enviada com sucesso! O código gerado é <strong>{{ image_id }}</strong>
+            </div>
+            {% endif %}
+
+            {% if form_result == 'error' %}
+            <div class="p-3 mb-4 bg-dark text-white shadow-sm">
+                Ocorreu um erro! Verifique se a imagem e o Token de segurança foram enviados corretamente.
+            </div>
+            {% endif %}
+            
+            <h1><strong>Tirando uma foto</strong></h1>
+            <p>Para que possamos realizar o experiemento contigo primeiros precisamos pré-processar uma foto sua
+                (de preferência uma foto frontal e com semblante sério).</p>
+            <p class="mt-1"><small><i>Obs. Todas as fotos salvas serão removidas logo após o fim desta mostra.</i></small></p>
+            
+            <div class="mt-4 card">
+                <div class="card-body shadow bg-white rounded">
+                    <form class="mb-0" action="/picture" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <input type='hidden' name='file_type' value=''/>
+                        <div class="form-group">
+                            <input type="text" id="auth_token" name="auth_token" class="form-control" placeholder="Token de Segurança" maxlength="100" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-file">
+                                <input type="file" id="photo" name="photo" class="custom-file-input"  accept="image/*">
+                                <label class="custom-file-label" for="photo">Carregar imagem...</label>
+                            </div>
+                        </div>
+                        <div class="form-group text-right mb-0">
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-fw fa-send" aria-hidden="true"></i> Enviar Foto</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
+{% endblock %}

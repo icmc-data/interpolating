@@ -1,0 +1,85 @@
+{% load static %}
+
+<html>
+<head>
+    
+    <title>Interpolador de Faces - Data Day</title>
+    <meta charset="UTF-8">  
+    <meta name="description" content="Data Day - Interpolação de Rostos com StyleGAN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static '/images/data_icon.png' %}">
+
+    <!-- CSS e Scripts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700&display=swap" rel="stylesheet"> 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body class="bg-light">
+    
+    <div class="d-flex" id="wrapper">
+
+        <!-- Menu Sidebar -->
+        <div class="bg-dark border-right border-dark" id="sidebar-wrapper">
+            <div class="sidebar-heading">
+                <img src="{% static '/images/logo_data_preto.png' %}" class="img-fluid" alt="Logo - Grupo DATA">
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="/" class="list-group-item list-group-item-action bg-dark text-light"> <i class="fa fa-fw fa-home" aria-hidden="true"></i> Início</a>
+                <a href="/picture" class="list-group-item list-group-item-action bg-dark text-light"> <i class="fa fa-fw fa-camera" aria-hidden="true"></i> Tirar foto</a>
+                <a href="/list" class="list-group-item list-group-item-action bg-dark text-light"> <i class="fa fa-fw fa-list" aria-hidden="true"></i> Interpolações</a>
+                <a href="/examples" class="list-group-item list-group-item-action bg-dark text-light"> <i class="fa fa-fw fa-star" aria-hidden="true"></i> Famosos</a>
+                <a href="/play" style="display: none" class="list-group-item list-group-item-action bg-dark text-light"> <i class="fa fa-fw fa-play" aria-hidden="true"></i> Play</a>
+                <a href="/settings" class="list-group-item list-group-item-action bg-dark text-light"> <i class="fa fa-fw fa-cog" aria-hidden="true"></i> Configurações</a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Conteúdo da página -->
+        <div id="page-content-wrapper" class="pb-5">
+            
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i> Menu
+                </button>
+            </nav>
+            
+            <!-- Conteúdo dinâmico -->
+            <div class="container">
+                {% block content %}
+                {% endblock %}                
+            </div>
+        </div>
+
+        </div>
+        <!-- /#wrapper -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="{% static 'custom.js' %}" ></script>
+    
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+    <!-- File Input -->
+    <script>
+        $(document).ready(function () {
+            bsCustomFileInput.init();
+        })
+    </script>
+
+</body>
+</html>
+
+<!-- https://getbootstrap.com/docs/4.3/layout/overview/ -->
+<!-- https://fontawesome.com/v4.7.0/icons/ -->
+<!-- https://tutorial.djangogirls.org/pt/template_extending/ -->

@@ -1,0 +1,47 @@
+/* 
+    Google Fonts:
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+ */
+
+/* Configurando padrões do tema */
+    body { overflow-x: hidden; }
+    #sidebar-wrapper { min-height: 100vh; margin-left: -15rem;
+        -webkit-transition: margin .25s ease-out; -moz-transition: margin .25s ease-out; -o-transition: margin .25s ease-out;
+        transition: margin .25s ease-out;
+    }
+
+    #sidebar-wrapper .sidebar-heading { padding: 0.875rem 1.25rem; font-size: 1.2rem;}
+    #sidebar-wrapper .list-group { width: 15rem; }
+    #page-content-wrapper { min-width: 100vw; }
+    #wrapper.toggled #sidebar-wrapper { margin-left: 0; }
+
+    @media (min-width: 768px) {
+        #sidebar-wrapper { margin-left: 0; }
+        #page-content-wrapper { min-width: 0; width: 100%; }
+        #wrapper.toggled #sidebar-wrapper { margin-left: -15rem;}
+    }
+
+
+/* Configurações do conteúdo */
+    /* body { background-color: #efefef; } */
+    h1, h2, h3, h4, h5 { font-family: 'Roboto Slab', serif; }
+    #page-content-wrapper button i { margin-right: 0.4em; }
+    
+/* Configurando a sidebar */
+    #sidebar-wrapper .sidebar-heading { max-width: 15rem; }
+    #sidebar-wrapper .sidebar-heading img { max-width: 100%; }
+    #sidebar-wrapper i { display: inline-block; margin-right: 0.4em; }
+
+/* Configurando a navbar superior */
+    #page-content-wrapper nav{ background-color: #1d2124 !important; }
+
+
+/* Configurando a área de interpolação */
+    .interpolador { position: relative; }
+    .interpolador .interpolador-images { position: relative; }
+    .interpolador .interpolador-category { display:none; position: absolute; top: 0; left: 0; bottom: 0; right: 0; }
+    .interpolador .interpolador-category.visible { display: block; }
+    
+    .interpolador .interpolador-category img { display: none; position: absolute; position: 0 auto auto 0; }
+    .interpolador .interpolador-category img.visible { display: block; }

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="row justify-content-center">
+
+        <div class="col-12 col-md-10">
+
+            {% if image_id == 0 %}
+                <div class="mt-5 p-3 mb-4 bg-dark text-white shadow-sm">
+                    Ocorreu um erro! Verifique se o ID da imagem foi passado corretamente.
+                </div>
+            {% endif %}
+
+            <h1 class="mt-4"><strong>Interpolando os resultados</strong></h1>
+            <p>Agora você já pode utilizar o vetor latente para brincar com a representação do seu rosto. 
+                Basta utilizar os controladores abaixo para visualizar as modificações.</p>
+        </div>
+
+        {% if image_id != 0 %}
+
+            <div class="interpolador col-12 col-md-12">
+                <div class="row justify-content-center">
+
+                    <div class="interpolador-original  mt-4 col-12 col-md-5">
+                        <div class="shadow"><img class="img-fluid" src="{{ paths.latent }}"></div>
+                    </div>
+
+                    <div class=" mt-4 col-12 col-md-5">
+                        <div class="interpolador-images shadow">
+                            
+                        {% for key, values in paths.results.items %}
+                            <div class="interpolador-category visible" direction="{{ key }}">
+                                {% for v in values %}
+                                    <img class="img-fluid visible" src="{{ v }}">
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+
+                            <div><img class="img-fluid" src="{{ paths.latent }}"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-10">
+                        <div class="mt-4 card">
+                            <div class="card-body">
+                                <div class="row align-items-center">
+                                    <div class="col col-12 col-md-8">
+                                        <input type="range" class="controller form-control-range" min="0" max="47" value="47">
+                                    </div>
+                                    <div class="col col-12 col-md-4 mt-4 mt-md-0">
+                                        <select class="direction-select custom-select">
+                                            {% for key, values in paths.results.items %}
+                                                <option value="{{ key }}">{{ key }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        {% endif %}
+
+    </div>
+    
+    
+{% endblock %}
