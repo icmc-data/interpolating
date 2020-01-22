@@ -4,6 +4,8 @@ Projeto desenvolvido para o evento [DATA Day](https://www.icmc.usp.br/noticias/4
 O principal objetivo do projeto era o de trazer à tona a existência das GAN's (Generative Adversarial Networks) e discutir seu funcionamento e possíveis aplicações.
 Com essa finalidade, foi desenvolvido um website que permitiu aos participantes interagirem pessoalmente com a StyleGAN, uma arquitetura de última geração desenvolvida pela NVIDIA em 2019.
 
+![](resources/demo_interpolation_gif.gif)
+
 ## Organização do projeto
 
     ├── LICENSE
@@ -44,3 +46,7 @@ O projeto desenvolvido é dividido em duas frentes distintas para que possa func
     $ python manage.py runserver 0.0.0.0:8000
 
 Já quanto ao servidor, recomendamos que se siga as instruções passo a passo do notebook em uma instância do Google Collab. Uma vez compreendido quais arquivos são utilizados no mesmo é possível reproduzir a arquitetura utilizada em qualquer serviço de nuvem (ou localmente) que possua os pré-requisitos necessários.
+
+## Autores 
+
+Cézanne Alves, Gabriel Van Loon, Gustavo Soares e Victor Henrique Rodrigues.
